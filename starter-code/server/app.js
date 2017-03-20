@@ -29,6 +29,8 @@ app.use(layouts);
 
 const index = require('./routes/index');
 app.use('/', index);
+const JOURNAL_ENTRIES = require('./routes/journal-entries.js');
+app.use('/api', JOURNAL_ENTRIES);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
