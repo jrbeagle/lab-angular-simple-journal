@@ -1,0 +1,9 @@
+<h1> Entries </h1>
+
+
+  <div *ngFor="let entry of entries">
+    <ul>
+      <li> {{entry.title}}, {{entry.date}} </li>
+      <a [routerLink]="['entry', entry._id]"> View Entry </a>
+    </ul>
+  </div>

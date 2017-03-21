@@ -1,0 +1,17 @@
+<h3> Single Entry </h3>
+
+<div *ngIf="errorMessage" class="error">
+  {{errorMessage}}
+</div>
+
+<div *ngIf="entry">
+ <ul>
+   <li>
+     <h4> Title: {{this.entry.title}} </h4>
+     <br>
+     <h3> Date: {{this.entry.date}} </h3>
+     <br>
+     <p>  Content: {{this.entry.content}} </p>
+   </li>
+ </ul>
+</div>
